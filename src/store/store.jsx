@@ -1,3 +1,4 @@
+// import axios fromm 'axios';
 import { applyMiddleware, createStore } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
@@ -11,6 +12,9 @@ export const store = createStore(
 const savedUser = localStorage.getItem('user');
 
 if (savedUser) {
+
+    // axios.defaults.headers.common['Authorization'] = savedUser;
+
     store.dispatch({
       type: 'LOGIN_SUCCESS',
       payload: { token: savedUser }

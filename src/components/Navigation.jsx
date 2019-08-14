@@ -11,6 +11,11 @@ const Navigation = () => {
                     </Link>
                 </li>
                 <li className='nav-item'>
+                    <Link to="/about" className='nav-link'>
+                        About
+                    </Link>
+                </li>
+                <li className='nav-item'>
                     <Link to="/register" className='nav-link'>
                         Registration
                     </Link>
@@ -20,6 +25,16 @@ const Navigation = () => {
                         Login
                     </Link>
                 </li>
+                <li className='nav-item'>
+                    <Link to="/users" className='nav-link'>
+                        Users
+                    </Link>
+                </li>
+                {/* <li className='nav-item'>
+                    <Link to="/" className='nav-link'>
+                        Logout
+                    </Link>
+                </li> */}
             </ul>
         </nav>
     );
