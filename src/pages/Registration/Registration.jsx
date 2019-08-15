@@ -28,12 +28,14 @@ class Registration extends Component {
     const { isRegistered } = this.props;
 
     if (isRegistered) {
-      
       return <Redirect to='/login' />;
     }
 
     return (
-      <form onSubmit={this.onSubmit} className='col-6 ml-auto mr-auto'>
+      <form 
+        onSubmit={this.onSubmit} 
+        className='col-6 ml-auto mr-auto'
+      >
         <div className='form-group'>
           <label htmlFor=''>Username</label>
           <input

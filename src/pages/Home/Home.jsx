@@ -1,12 +1,9 @@
 import React, { Component } from "react";
+import Posts from '../Posts';
 
 class Home extends Component {
-  componentDidMount() {
-    //todo - implement get list of posts
-  }
-
   render() {
-    return <div>Home</div>;
+    return <Posts />;
   }
 }
 

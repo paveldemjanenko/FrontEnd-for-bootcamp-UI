@@ -27,12 +27,14 @@ class Login extends Component {
     const { user } = this.props;
 
     if (user.token) {
-      
       return <Redirect to='/' />;
     }
 
     return (
-      <form onSubmit={this.onSubmit} className='col-6 ml-auto mr-auto'>
+      <form 
+        onSubmit={this.onSubmit} 
+        className='col-6 ml-auto mr-auto'
+        >
         <div>
           <label htmlFor=''>Email</label>
           <input

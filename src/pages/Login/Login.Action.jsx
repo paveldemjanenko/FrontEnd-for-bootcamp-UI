@@ -6,7 +6,6 @@ const loginUser = user => dispatch => {
     .post("/api/v1/auth/session", user)
     .then(response => {
       if (response && response.status === 200) {
-        
         const { token } = response.data.payload;
         localStorage.setItem('user', token); //Use storage  to safe password
       
