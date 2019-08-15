@@ -1,1 +1,1 @@
-// export { default } from "./Logout.Container";
+export { default } from "./Logout";
