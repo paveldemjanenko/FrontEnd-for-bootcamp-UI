@@ -3,6 +3,7 @@ import { reducer as notifications } from "react-notification-system-redux";
 import isRegistered from './registration';
 import getPostsList from './getPostsList';
 import getPostList from './getPostList';
+import getComments from './getComments';
 import user from './user';
 
 
@@ -11,7 +12,8 @@ const rootReducer = combineReducers({
     isRegistered, 
     user,
     getPostsList,
-    getPostList
+    getPostList,
+    getComments
 });
 
 export default rootReducer;

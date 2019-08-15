@@ -15,6 +15,7 @@ class Posts extends Component {
             <Link to={`/posts/${item._id}`}>
               <div className='title'>{item.title}</div>
               <img src={item.media.path} alt='' />
+              <div className='title'>LOOOL</div>
             </Link>
           </li>
         ))}
